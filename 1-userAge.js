@@ -1,3 +1,5 @@
+import { isFunction, isObject } from 'util';
+
 'use strict'
 
 /*
@@ -7,6 +9,30 @@
  *
  */
 
-const user = {} // copy the one from the previous exercice
+const user = {
+    name: 'Ibrahim Diaby',
+    email: 'ibrahim.diaby@uvci.edu.ci',
+    age: 18,
+}
+ // copy the one from the previous exercice
+
 
 // Your code :
+
+const userAge = user => user
+
+
+console.log(userAge(user[age]))
+
+const assert = require('assert')
+
+assert.strictEqual(userAge(user[Age]), isFunction)
+assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
+assert.strictEqual(console.log(user[age]), 18)
+assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')
+
+
+assert.strictEqual(user, isObject)
+assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
+assert.strictEqual(console.log(user[age]), 18)
+assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')

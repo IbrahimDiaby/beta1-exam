@@ -28,3 +28,22 @@ const users = [
 ]
 
 // Your code :
+
+const validCandidates = usersS => {
+  let result = ''
+  let count = 1
+  for(count = 1; count <= usersS.length; count++){
+    result = ((user[count][age] >= 18) && (usersS[count][age] <= 25)) ? usersS[[count][name][email][age]] : result
+  }
+  return result
+  
+}
+
+console.log(validCandidates(usersS[users][]))
+
+const assert = require('assert')
+
+assert.strictEqual(userAge(user[Age]), isFunction)
+assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
+assert.strictEqual(console.log(user[age]), 18)
+assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')

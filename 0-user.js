@@ -1,3 +1,5 @@
+import { isObject } from 'util';
+
 'use strict'
 
 /*
@@ -20,3 +22,19 @@
  */
 
 // Your code :
+const user = {
+    name: 'Ibrahim Diaby',
+    email: 'ibrahim.diaby@uvci.edu.ci',
+    age: 18,
+}
+
+console.log(user[name])
+console.log(user[email])
+console.log(user[age])
+
+const assert = require('assert')
+
+assert.strictEqual(user[], isObject)
+assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
+assert.strictEqual(console.log(user[age]), 18)
+assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')
