@@ -1,6 +1,4 @@
-import { isObject } from 'util';
-
-'use strict'
+'use strict';
 
 /*
  * Create an object `user` with properties:
@@ -22,19 +20,32 @@ import { isObject } from 'util';
  */
 
 // Your code :
+
 const user = {
-    name: 'Ibrahim Diaby',
-    email: 'ibrahim.diaby@uvci.edu.ci',
-    age: 18,
-}
+    Name: 'Diaby Ibrahim',
+    Age : 18,
+    City: 'Abidjan',
+    Nationality: 'Ivoirian',
+    Status : 'Student',
+    Email : 'ibrahim.diaby@uvci.edu.ci',
+};
 
-console.log(user[name])
-console.log(user[email])
-console.log(user[age])
-
-const assert = require('assert')
-
-assert.strictEqual(user[], isObject)
-assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
-assert.strictEqual(console.log(user[age]), 18)
-assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')
+console.log('\n                    ----- All information on User ----- \n');
+console.log('Nom et Prenom :');
+console.log(user['Name']);
+console.log('\n');
+console.log('Age :');
+console.log(user['Age']);
+console.log('\n');
+console.log('Ville :');
+console.log(user['City']);
+console.log('\n');
+console.log('Nationalité :');
+console.log(user['Nationality']);
+console.log('\n');
+console.log('Profession :');
+console.log(user['Status']);
+console.log('\n');
+console.log('Email :');
+console.log(user['Email']);
+console.log('\n');

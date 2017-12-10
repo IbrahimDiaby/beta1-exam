@@ -1,6 +1,4 @@
-import { isFunction, isObject } from 'util';
-
-'use strict'
+'use strict';
 
 /*
  * Create a function `userAge` which take a user object and returns its age
@@ -10,29 +8,21 @@ import { isFunction, isObject } from 'util';
  */
 
 const user = {
-    name: 'Ibrahim Diaby',
-    email: 'ibrahim.diaby@uvci.edu.ci',
-    age: 18,
-}
+    Name: 'Diaby Ibrahim',
+    Age : 18,
+    City: 'Abidjan',
+    Nationality: 'Ivoirian',
+    Status : 'Student',
+    Email : 'ibrahim.diaby@uvci.edu.ci',
+};
  // copy the one from the previous exercice
 
-
+const userAge = arr => console.log(arr);
+    
 // Your code :
-
-const userAge = user => user
-
-
-console.log(userAge(user[age]))
-
-const assert = require('assert')
-
-assert.strictEqual(userAge(user[Age]), isFunction)
-assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
-assert.strictEqual(console.log(user[age]), 18)
-assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')
-
-
-assert.strictEqual(user, isObject)
-assert.strictEqual(console.log(user[name]), 'Ibrahim Diaby')
-assert.strictEqual(console.log(user[age]), 18)
-assert.strictEqual(console.log(user[email]), 'ibrahim.diaby@uvci.edu.ci')
+console.log('\n                   ----- Information about userAge -----\n')
+console.log('Cher :');
+console.log(user['Name']);
+console.log('\n')
+console.log('Vous avez :')
+userAge(user['Age']);
