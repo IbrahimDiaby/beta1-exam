@@ -29,17 +29,47 @@ const users = [
 
 // Your code :
 
-const validCandidates = usersS => {
+
+const validCandidates = users => users;
+
+    console.log(validCandidates(users['0']));
+    console.log(validCandidates(users['1']));
+    console.log(validCandidates(users['2']));
+    console.log(validCandidates(users['4']));
+    console.log(validCandidates(users['5']));
+    console.log(validCandidates(users['7']));
+    console.log(validCandidates(users['8']));
+    console.log(validCandidates(users['9']));
+    console.log(validCandidates(users['10']));
+    console.log(validCandidates(users['11']));
+    console.log(validCandidates(users['12']));
+    console.log(validCandidates(users['13']));
+    console.log(validCandidates(users['14']));
+
+/* const validCandidates = users => {
   let count = 0;
+  let resultat = '';
+  let result = '';
   
-  for (count = 0; count < users.length; count++){
-    
-    if((users[['count']['age']] >= 18) && (users[['count']['age']] <= 25)){
-      console.log(validCandidates(users['count']['age']));
+ for(count = 0; count < users.length; count++){
+  
+      if((((users['count'].age) >= 18)) && ((users['count'].age) <= 25)){
+        result = resultat + console.log(users['count']);
   }
   
   else{
-    console.log('');
+        resultat = '';
   }
-} 
 }
+      return result;
+}
+
+console.log(validCandidates(users));
+
+console.log(users.length);
+console.log(users['1']);
+console.log(users['1']['age']);
+console.log(users['1']['name']);
+console.log(Object.keys(users))
+console.log(Object.keys)
+console.log(users['3'].age) */
